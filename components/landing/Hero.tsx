@@ -22,7 +22,7 @@ export default function Hero() {
   });
 
   const yPercent = useTransform(scrollYProgress, [0, 1], [100, 0]);
-  const yPercent2 = useTransform(scrollYProgress2, [0, 1], [0, 30]);
+  const yPercent2 = useTransform(scrollYProgress2, [0, 1], [30, 0]);
 
   const objectPosition = useTransform(yPercent, (v) => `0% ${v}%`);
   const objectPosition2 = useTransform(yPercent2, (v) => `0% ${v}%`);
