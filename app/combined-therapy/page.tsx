@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "Combined Therapy — Sound & Art in Sequence",
+  title: "Combined Therapy | Ilinca Barbato ",
   description:
     "Begin with sound to ground your body, then express through intuitive painting. A gentle and holistic space for self-discovery and emotional clarity.",
   openGraph: {
