@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "Art Therapy — Intuitive Painting for Healing",
+  title: "Art Therapy | Ilinca Barbato",
   description:
     "Discover art therapy sessions that invite expression, calm, and insight through guided intuitive painting — no artistic experience needed.",
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://ilincabarbato.com/og-image.jpg", // full URL required
+        url: "https://ilincabarbato.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Art Therapy — Ilinca Barbato",

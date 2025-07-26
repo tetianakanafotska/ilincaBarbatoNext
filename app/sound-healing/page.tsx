@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "Sound Healing — Restorative Sound Baths",
+  title: "Sound Healing | Ilinca Barbato",
   description:
     "Calm your nervous system with the tones of crystal and Tibetan singing bowls. A space to rest deeply and reconnect with self.",
   openGraph: {
