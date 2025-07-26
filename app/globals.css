@@ -1,26 +1,139 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @apply text-dark bg-white antialiased;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+main {
+  @apply transition-opacity duration-[100ms] ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --text-88: 5.5rem;
+  --text-48: 3rem;
+  --text-18: var(--text-lg);
+  --text-16: var(--text-base);
+  --text-14: var(--text-sm);
+  --color-dark: #220f0b;
+  --color-light-purple: #f2f6ff;
+  --color-purple: #dfdcff;
+  --color-dark-purple: #3f33c9;
+
+  --animate-scroll-down: scroll-down 3s infinite backwards;
+
+  @keyframes scroll-down {
+    0% {
+      transform: translateY(-150%);
+    }
+    30%,
+    70% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(150%);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.button {
+  @apply relative px-9 py-[14px] overflow-hidden bg-transparent z-10 leading-[1] shadow-[inset_0_0_0_1px_black] text-white;
+  transition: color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1),
+    border-color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.button:hover {
+  @apply text-dark shadow-[inset_0_0_0_1px_black];
+}
+
+/* Background wipe animation */
+.button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--color-dark);
+  border-radius: inherit;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.button:hover::before {
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.button-dark-mode {
+  @apply relative z-10 overflow-hidden rounded-full leading-[1] px-9 py-[14px] text-white border border-white/40 cursor-pointer;
+  transition: color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1),
+    border-color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.button-dark-mode:hover {
+  @apply text-dark border-dark;
+}
+
+.button-dark-mode::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0rem;
+  background-color: #eaeaea;
+  border-radius: inherit;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
+}
+
+.button-dark-mode:hover::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.section-divider {
+  @apply pt-2 border-b-1 border-dark/40 text-[20px] text-dark/40 italic leading-[1.8];
+}
+
+.section-subtitle {
+  @apply lg:w-[31vw] max-w-screen text-dark/40 text-16 leading-[1.5] mt-[0.85rem];
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 1px;
+  background: currentColor;
+  will-change: transform;
+  transform-origin: 100% 100%;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.link-underline:hover::after {
+  transform-origin: 0% 100%;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.group:hover .group-hover-link::after {
+  transform-origin: 0% 100%;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-transition {
+  @apply opacity-0;
 }

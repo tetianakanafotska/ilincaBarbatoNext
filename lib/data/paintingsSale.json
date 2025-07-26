@@ -1,0 +1,47 @@
+[
+  {
+    "id": 3,
+    "name": "The Comfortable Uncomfortable, 2024",
+    "slug": "the-comfortable-uncomfortable",
+    "description": "Abstract impasto acrylic painting",
+    "size": "109.5 × 55 cm",
+    "price": "€ 1850",
+    "src": "https://res.cloudinary.com/dxdpltdkf/image/upload/v1752781875/The_Comfortable_Uncomfortablen_1850_1_l8wm47.avif"
+  },
+  {
+    "id": 4,
+    "name": "Soft Creator, 2025",
+    "slug": "soft_creator",
+    "description": "Abstract impasto acrylic painting",
+    "size": "109.5 × 55 cm",
+    "price": "€ 999",
+    "src": "https://res.cloudinary.com/dxdpltdkf/image/upload/v1752780444/softcreator_1_ujnxhd.avif"
+  },
+  {
+    "id": 5,
+    "name": "Electric Feels, 2024",
+    "slug": "electric_feels",
+    "description": "Abstract impasto acrylic painting",
+    "size": "109.5 × 55 cm",
+    "price": "€ 1200",
+    "src": "https://res.cloudinary.com/dxdpltdkf/image/upload/v1752501351/hmray7nj0ykvnt9dxeur_tr0fhx.avif"
+  },
+  {
+    "id": 2,
+    "name": "Falling in Love, 2024",
+    "slug": "falling-in-love",
+    "description": "Abstract impasto acrylic painting",
+    "size": "109.5 × 55 cm",
+    "price": "€ 690",
+    "src": "https://res.cloudinary.com/dxdpltdkf/image/upload/v1752781937/Falling_In_Love_690_hezqhl.avif"
+  },
+  {
+    "id": 1,
+    "name": "Soft Lover, 2024",
+    "slug": "soft-lover",
+    "description": "Abstract impasto acrylic painting",
+    "size": "109.5 × 55 cm",
+    "price": "€ 1659",
+    "src": "https://res.cloudinary.com/dxdpltdkf/image/upload/v1752501351/qrw4eh3iqkcnkbc7zdus_ucjhbr.avif"
+  }
+]
