@@ -5,11 +5,9 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import useMediaQuery from "@/lib/hooks/useMediaQuery";
 import Section from "@/components/Section";
-import Image from "next/image";
 
 export default function Hero() {
   const isSmall = useMediaQuery("(max-width: 640px)");
-  const isNarrow = useMediaQuery("(max-heigth:800px)");
   const containerRef = useRef(null);
   const containerRef2 = useRef(null);
 
@@ -36,16 +34,6 @@ export default function Hero() {
           className="md:w-[42.5%] relative w-dvw overflow-hidden h-full"
           ref={containerRef2}
         >
-          {/* <motion.div className="w-full h-full">
-            <Image
-              src="https://res.cloudinary.com/dxdpltdkf/image/upload/v1753502247/hero_short_1_qx9iu4.avif"
-              width={1000}
-              height={1000}
-              className="object-cover w-full h-full"
-              alt="portrait of Ilinca Barbato for desktop version"
-              style={{ objectPosition: "0% 50%" }}
-            ></Image>
-          </motion.div> */}
           <motion.img
             src="https://res.cloudinary.com/dxdpltdkf/image/upload/v1753502247/hero_short_1_qx9iu4.avif"
             alt="portrait of Ilinca Barbato"
