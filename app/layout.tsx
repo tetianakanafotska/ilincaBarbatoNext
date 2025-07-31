@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ClientWrappers from "@/components/ClientWrappers";
+import LayoutWrapper from "@/components/LayoutWrapper";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" data-google-analytics-opt-out="">
       <body>
-        <ClientWrappers>{children}</ClientWrappers>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

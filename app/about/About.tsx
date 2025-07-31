@@ -7,22 +7,21 @@ import { useLenis } from "lenis/react";
 import { useScrollRestore } from "@/lib/hooks/useScrollRestore";
 
 const About = () => {
-  const router = useRouter();
   const lenis = useLenis();
+  useScrollRestore(lenis);
+  // console.log(
+  //   "Rendered on about",
+  //   typeof window === "undefined" ? "server" : "client"
+  // );
+  const router = useRouter();
 
-  const onPaintingClick = (slug: string) => () => handlePaintingClick(slug);
-
-  const handlePaintingClick = (slug: string) => {
+  const onPaintingClick = (slug: string) => () => {
     const scrollY = lenis?.scroll ?? window.scrollY;
 
-    if (typeof window !== "undefined") {
-      sessionStorage.setItem("scrollPosition", scrollY.toString());
-    }
+    sessionStorage.setItem("scrollPosition", scrollY.toString());
 
-    router.push(`/paintings/${slug}`);
+    router.push(`/paintings/${slug}`, { scroll: false });
   };
-
-  useScrollRestore(lenis);
 
   return (
     <main>

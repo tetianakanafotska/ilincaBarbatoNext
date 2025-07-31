@@ -1,4 +1,3 @@
-import Link from "next/link";
 import TransitionLink from "@/lib/TransitionLink";
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
             by Ilinca Barbato
           </p>
           <p className="mt-5">
-            BOARÉ Yoga Art Studio
+            You can find us here:
             <br />
             Rykestraße 23,
             <br />

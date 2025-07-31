@@ -46,7 +46,7 @@ const Navbar = () => {
       )}
     >
       {/* Desktop Menu */}
-      <div className="pt-4 pb-2 leading-[1.2] hidden md:flex items-center justify-between">
+      <div className="pt-5 pb-2 leading-[1.2] hidden md:flex items-center justify-between">
         <TransitionLink href="/" className="cursor-pointer link-underline">
           ILINCA BARBATO
         </TransitionLink>

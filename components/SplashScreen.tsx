@@ -1,4 +1,7 @@
+"use client";
+
 import { useEffect, useContext } from "react";
+
 import {
   animate,
   useTransform,
@@ -15,6 +18,10 @@ interface SplashContextType {
 }
 
 function SplashScreen() {
+  // console.log(
+  //   "Rendered on ffo",
+  //   typeof window === "undefined" ? "server" : "client"
+  // );
   const { hasSeenSplash, setHasSeenSplash } = useContext(
     SplashContext
   ) as SplashContextType;
@@ -29,7 +36,15 @@ function SplashScreen() {
       duration: 1,
       ease: easeOut,
     });
-    return () => numberAnimation.stop();
+
+    const timeout = setTimeout(() => {
+      setHasSeenSplash(true);
+    }, 2500);
+
+    return () => {
+      numberAnimation.stop();
+      clearTimeout(timeout);
+    };
   }, []);
 
   if (hasSeenSplash) return null;
@@ -40,7 +55,6 @@ function SplashScreen() {
       animate={{ opacity: 0 }}
       transition={{ delay: 2.3, duration: 0.3 }}
       className="bg-white z-50 pb-10 fixed flex flex-col w-dvw h-dvh justify-center items-center inset-0"
-      onAnimationComplete={() => setHasSeenSplash(true)}
     >
       <div className="flex text-18">
         <motion.div>{rounded}</motion.div>%

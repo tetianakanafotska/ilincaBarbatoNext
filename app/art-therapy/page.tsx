@@ -91,7 +91,7 @@ const TherapeuticArt = () => {
       </div>
 
       <div className="min-h-screen md:mx-[45px] mx-[20px] mt-20 lg:mt-0">
-        <p className="lg:text-48 text-[9vw] md:leading-[1.2] leading-[10vw] lg:mb-25 mb-15">
+        <p className="lg:text-48 text-[9vw] md:leading-[1.2] leading-[120%] lg:mb-25 mb-15">
           <span className="lg:ml-50"></span>
           <span className="text-dark/40 ">(art therapy)</span> is a gentle,
           guided process of painting intuitively — tuning into your body,

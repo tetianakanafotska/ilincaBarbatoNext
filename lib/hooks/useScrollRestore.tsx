@@ -7,7 +7,7 @@ export function useScrollRestore(lenis: any) {
       setTimeout(() => {
         lenis.scrollTo(Number(scrollPosition), { immediate: true });
         sessionStorage.removeItem("scrollPosition");
-      }, 400);
+      }, 300);
     }
   }, [lenis]);
 }
