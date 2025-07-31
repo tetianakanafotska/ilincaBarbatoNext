@@ -1,17 +1,22 @@
 "use client";
-import { usePathname } from "next/navigation";
+
 import { SplashProvider } from "@/lib/splashContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/lib/googleAnalytics";
 import SplashScreen from "@/components/SplashScreen";
+import { usePathname } from "next/navigation";
 
 import { ReactLenis } from "lenis/react";
-import { ReactNode } from "react";
 
-export default function ClientWrappers({ children }: { children: ReactNode }) {
+export default function LayoutWrapper({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
-  const isPaitingDetail = pathname.startsWith("/paintings/");
+
+  const isPaintingDetail = pathname.startsWith("/paintings");
   return (
     <SplashProvider>
       <ReactLenis root options={{ lerp: 0.1 }}>
@@ -19,7 +24,7 @@ export default function ClientWrappers({ children }: { children: ReactNode }) {
         <SplashScreen />
         <Navbar />
         {children}
-        {!isPaitingDetail && <Footer />}
+        {!isPaintingDetail && <Footer />}
       </ReactLenis>
     </SplashProvider>
   );

@@ -37,7 +37,7 @@ main {
 }
 
 .button {
-  @apply relative px-9 py-[14px] overflow-hidden bg-transparent z-10 leading-[1] shadow-[inset_0_0_0_1px_black] text-white;
+  @apply relative px-9 py-[14px] overflow-hidden bg-transparent z-10 leading-[100%] shadow-[inset_0_0_0_1px_black] text-white;
   transition: color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1),
     border-color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
 }
@@ -65,7 +65,7 @@ main {
 }
 
 .button-dark-mode {
-  @apply relative z-10 overflow-hidden rounded-full leading-[1] px-9 py-[14px] text-white border border-white/40 cursor-pointer;
+  @apply relative z-10 overflow-hidden rounded-full leading-[100%] px-9 py-[14px] text-white border border-white/40 cursor-pointer;
   transition: color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1),
     border-color 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
 }

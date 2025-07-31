@@ -1,20 +1,15 @@
-import { createContext, useState } from "react";
-import type { ReactNode } from "react";
+"use client";
+
+import { createContext, useState, ReactNode } from "react";
 
 interface SplashContextType {
   hasSeenSplash: boolean;
   setHasSeenSplash: (value: boolean) => void;
 }
 
-export const SplashContext = createContext<SplashContextType | undefined>(
-  undefined
-);
+export const SplashContext = createContext<SplashContextType | null>(null);
 
-interface SplashProviderProps {
-  children: ReactNode;
-}
-
-export function SplashProvider({ children }: SplashProviderProps) {
+export const SplashProvider = ({ children }: { children: ReactNode }) => {
   const [hasSeenSplash, setHasSeenSplash] = useState(false);
 
   return (
@@ -22,4 +17,4 @@ export function SplashProvider({ children }: SplashProviderProps) {
       {children}
     </SplashContext.Provider>
   );
-}
+};

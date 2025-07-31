@@ -48,8 +48,8 @@ export default function Hero() {
             </span>
           </div>
         </div>
-        <div className="flex-1 max-w-screen md:px-8 xl:px-0 md:block h-full flex flex-col mb-6 px-[20px] md:pt-[31.5vh] pt-[11vh] md:mx-0">
-          <h1 className="md:text-[8vw] xl:text-[6.1vw] text-[10vw] leading-[1.14]">
+        <div className="flex-1 max-w-screen md:px-8 xl:px-0 md:block h-full flex flex-col mb-6 px-[20px] md:pt-[31.8vh] pt-[11vh] md:mx-0">
+          <h1 className="md:text-[8vw] xl:text-[6.1vw] text-[10vw] leading-[110%]">
             <div className="relative xl:-left-[13%] w-full xl:w-[calc(100%+3.35vw+100px)]">
               <span className="inline pr-4 xl:pr-0">
                 THERAPEUTIC <i>ART</i>
@@ -65,7 +65,7 @@ export default function Hero() {
             </div>
           </h1>
 
-          <h2 className="xl:w-[54%] w-full xl:translate-x-[8vw] md:pt-13 pt-5 md:text-18 md:mb-0 mb-5">
+          <h2 className="xl:w-[54%] w-full leading-[150%] xl:translate-x-[8.1vw] md:pt-13 pt-5 md:text-18 md:mb-0 mb-5">
             Relax and heal through personalized art and sound therapy, exploring
             your emotions, unlocking creativity and rediscovering your inner
             balance
@@ -86,7 +86,7 @@ export default function Hero() {
         </span>
       </header>
       <Section>
-        <div className="flex flex-col justify-between bg-white pt-10 md:pt-16 md:text-48 text-[9vw] md:leading-[59px] leading-[11vw] pb-[10vh] lg:pb-[8vh]">
+        <div className="flex flex-col justify-between bg-white pt-10 md:pt-16 md:text-48 text-[9vw] md:leading-[59px] leading-[120%] pb-[10vh] lg:pb-[8vh]">
           <p className="mb-[6vh] ">
             <span className="md:ml-[13rem] text-dark/40">
               (art has always been){" "}
