@@ -18,10 +18,6 @@ interface SplashContextType {
 }
 
 function SplashScreen() {
-  // console.log(
-  //   "Rendered on ffo",
-  //   typeof window === "undefined" ? "server" : "client"
-  // );
   const { hasSeenSplash, setHasSeenSplash } = useContext(
     SplashContext
   ) as SplashContextType;

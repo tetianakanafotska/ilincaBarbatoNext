@@ -60,10 +60,6 @@ const whatexpect = [
 ];
 
 const SoundHealing = () => {
-  // console.log(
-  //   "Rendered on sound",
-  //   typeof window === "undefined" ? "server" : "client"
-  // );
   return (
     <main className="min-h-screen">
       <div className="h-svh flex pt-[19vh] lg:items-center lg:pt-0 md:px-[45px] px-[20px]">
