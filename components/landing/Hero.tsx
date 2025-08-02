@@ -54,7 +54,7 @@ export default function Hero() {
               <span className="inline pr-4 xl:pr-0">
                 THERAPEUTIC <i>ART</i>
               </span>
-              <im
+              <img
                 src="/ampersand.svg"
                 alt="ampersand"
                 className="inline align-baseline md:w-[5vw] xl:w-[3.85vw] w-[6.4vw] xl:mx-[50px] mr-3 h-auto"
