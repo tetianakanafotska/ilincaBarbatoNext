@@ -9,10 +9,6 @@ import { useScrollRestore } from "@/lib/hooks/useScrollRestore";
 const About = () => {
   const lenis = useLenis();
   useScrollRestore(lenis);
-  // console.log(
-  //   "Rendered on about",
-  //   typeof window === "undefined" ? "server" : "client"
-  // );
   const router = useRouter();
 
   const onPaintingClick = (slug: string) => () => {
