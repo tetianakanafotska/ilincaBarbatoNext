@@ -16,7 +16,7 @@ const About = () => {
 
     sessionStorage.setItem("scrollPosition", scrollY.toString());
 
-    router.push(`/paintings/${slug}`, { scroll: false });
+    router.push(`/paintings/${slug}`);
   };
 
   return (
