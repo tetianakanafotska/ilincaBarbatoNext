@@ -3,11 +3,10 @@
 import { useParams } from "next/navigation";
 import paintings from "@/lib/data/paintingsSale.json";
 import Error from "@/components/Error";
-import { easeInOut, motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import ArrowBack from "@/components/icons/ArrowBack";
 import { useState } from "react";
 import TransitionLink from "@/lib/TransitionLink";
-import Image from "next/image";
 
 export default function PaintingDetail() {
   const { slug } = useParams();
