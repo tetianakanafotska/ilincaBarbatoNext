@@ -8,6 +8,7 @@ import BurgerAnimation from "@/components/burgerAnimated";
 import ArrowLink from "@/components/icons/ArrowLink";
 import clsx from "clsx";
 import TransitionLink from "@/lib/TransitionLink";
+import Logo from "./icons/Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,15 +47,25 @@ const Navbar = () => {
       )}
     >
       {/* Desktop Menu */}
-      <div className="pt-5 pb-2 leading-[1.2] hidden md:flex items-center justify-between">
-        <TransitionLink href="/" className="cursor-pointer link-underline">
-          ILINCA BARBATO
+      <div className="pt-4 pb-4 leading-[1.2] hidden md:flex items-center justify-between">
+        <TransitionLink
+          href="/"
+          className={clsx(
+            pathname === "/"
+              ? "font-bold underline-offset-4 decoration-[1px]"
+              : "link-underline font-bold"
+          )}
+        >
+          <span className="gap-[6px] inline-flex leading-[1]">
+            <Logo className="w-3" />
+            ILINCA BARBATO
+          </span>
         </TransitionLink>
 
-        <div className="space-x-[89px] items-center flex">
+        <div className="space-x-[77px] items-center flex">
           <div className="relative group">
-            <a className="inline-block cursor-pointer link-underline">
-              SERVICES
+            <a className="inline-block font-bold cursor-pointer link-underline">
+              Services
             </a>
             <div
               className={clsx(
@@ -82,26 +93,25 @@ const Navbar = () => {
               </TransitionLink>
             </div>
           </div>
-
-          <TransitionLink
-            href="/about"
-            className={clsx(
-              pathname === "/about"
-                ? "underline underline-offset-4 decoration-[1px]"
-                : "link-underline"
-            )}
-          >
-            ABOUT
-          </TransitionLink>
           <TransitionLink
             href="/upcoming-events"
             className={clsx(
               pathname === "/upcoming-events"
-                ? "underline underline-offset-4 decoration-[1px]"
-                : "link-underline"
+                ? "underline font-bold underline-offset-4 decoration-[1px]"
+                : "link-underline font-bold"
             )}
           >
-            GROUP EVENTS
+            Meditate & Paint Events
+          </TransitionLink>
+          <TransitionLink
+            href="/about"
+            className={clsx(
+              pathname === "/about"
+                ? "underline font-bold underline-offset-4 decoration-[1px]"
+                : "link-underline font-bold"
+            )}
+          >
+            About
           </TransitionLink>
 
           <a
@@ -144,7 +154,7 @@ const Navbar = () => {
               ABOUT
             </Link>
             <Link href="/upcoming-events" onClick={handleClose}>
-              GROUP EVENTS
+              MEDITATE & PAINT EVENTS
             </Link>
 
             <button
