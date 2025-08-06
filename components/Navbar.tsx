@@ -129,7 +129,10 @@ const Navbar = () => {
       {/* Mobile Menu Header */}
       <div className="py-2 flex items-center justify-between md:hidden leading-[1]">
         <Link href="/" onClick={handleClose}>
-          ILINCA BARBATO
+          <span className="gap-[6px] inline-flex leading-[1]">
+            <Logo className="w-3" />
+            ILINCA BARBATO
+          </span>
         </Link>
 
         <div
