@@ -12,13 +12,14 @@ const Footer = () => {
             <br />
             by Ilinca Barbato
           </p>
-          <p className="mt-5">
-            You can find us here:
-            <br />
-            Rykestraße 23,
-            <br />
-            10405, Berlin
-          </p>
+          <div className="mt-8">
+            <p className="pb-4">You can find us here:</p>
+            <span>
+              Rykestraße 23,
+              <br />
+              10405, Berlin
+            </span>
+          </div>
         </div>
 
         <div className="flex gap-5 md:w-[28%] w-full md:items-end flex-col">
