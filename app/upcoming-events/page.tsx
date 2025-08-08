@@ -98,7 +98,7 @@ function UpcomingEvents() {
                   <img
                     src={event.img}
                     alt={event.title}
-                    className="object-cover mb-4 h-[150px] w-full"
+                    className="object-cover mb-4 h-[250px] w-full"
                   />
                   <button
                     className={clsx(

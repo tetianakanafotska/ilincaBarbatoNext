@@ -62,10 +62,10 @@ const Navbar = () => {
           </span>
         </TransitionLink>
 
-        <div className="space-x-[77px] items-center flex">
+        <div className="space-x-[75px] items-center flex">
           <div className="relative group">
             <a className="inline-block font-bold cursor-pointer link-underline">
-              Services
+              SERVICES
             </a>
             <div
               className={clsx(
@@ -101,7 +101,7 @@ const Navbar = () => {
                 : "link-underline font-bold"
             )}
           >
-            Meditate & Paint Events
+            H'ARTS LAB EVENTS
           </TransitionLink>
           <TransitionLink
             href="/about"
@@ -111,7 +111,7 @@ const Navbar = () => {
                 : "link-underline font-bold"
             )}
           >
-            About
+            ABOUT
           </TransitionLink>
 
           <a
@@ -157,7 +157,7 @@ const Navbar = () => {
               ABOUT
             </Link>
             <Link href="/upcoming-events" onClick={handleClose}>
-              MEDITATE & PAINT EVENTS
+              H'ARTS LAB EVENTS
             </Link>
 
             <button

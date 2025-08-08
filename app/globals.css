@@ -18,7 +18,7 @@ main {
   --color-dark: #220f0b;
   --color-light-purple: #f2f6ff;
   --color-purple: #dfdcff;
-  --color-dark-purple: #3f33c9;
+  --color-dark-purple: rgb(104, 93, 224);
 
   --animate-scroll-down: scroll-down 3s infinite backwards;
 
@@ -71,7 +71,7 @@ main {
 }
 
 .button-dark-mode:hover {
-  @apply text-dark border-dark;
+  @apply text-dark;
 }
 
 .button-dark-mode::before {
@@ -80,7 +80,6 @@ main {
   z-index: -1;
   inset: 0rem;
   background-color: #eaeaea;
-  border-radius: inherit;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.45s cubic-bezier(0.43, 0.195, 0.02, 1);
