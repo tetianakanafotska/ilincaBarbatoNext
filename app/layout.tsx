@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-google-analytics-opt-out="">
       <body>
-        <CookieBanner />
+        {/* <CookieBanner /> */}
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
