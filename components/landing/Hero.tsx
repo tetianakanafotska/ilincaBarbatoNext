@@ -72,19 +72,13 @@ export default function Hero() {
             balance
           </h2>
           <div>
-            {/* <a
+            <a
               className="button px-10 rounded-full lg:hidden inline-block text-center"
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2EOc7HrGHnc1yrFHy2Jpl0j3DIWterNq3BKxXCLimclABdrzYCNKpWiNtl7hO6fpQzh-mVpWU_"
               target="_blank"
               rel="noopener noreferrer"
             >
               Book a Therapy
-            </a> */}
-            <a
-              href="mailto:ilinca.barbato@yahoo.com"
-              className={clsx("rounded-full", "button")}
-            >
-              Get in touch
             </a>
           </div>
         </div>
