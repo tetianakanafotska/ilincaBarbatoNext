@@ -1,5 +1,14 @@
 [ 
   {
+    "id": 10,
+    "title": "New Event",
+    "date": "2025-08-20",
+    "time": "12:00 - 13:00",
+    "link": "https://www.eventbrite.com/e/outdoor-flow-painting-session-sound-healing-meditation-friday-0407-tickets-1392458072579?aff=oddtdtcreator&keep_tld=1",
+    "description": "A relaxing art therapy session focused on self-expression through painting. Just bring your emotions and curiosity.",
+    "img": "https://res.cloudinary.com/dxdpltdkf/image/upload/v1754665842/DSC_7608-min_dcqyqt.avif"
+  },
+  {
     "id": 1,
     "title": "Outdoor paiting flow & Sound Healing Meditation",
     "date": "2025-08-20",
